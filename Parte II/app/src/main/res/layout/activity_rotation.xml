@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/primary"
+        app:title="@string/title_rotation"
+        app:titleTextColor="@color/on_primary"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:navigationIconTint="@color/on_primary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="10dp"
+        android:background="@color/surface"
+        android:gravity="center_vertical">
+
+        <View android:layout_width="12dp" android:layout_height="12dp"
+            android:background="@color/state_green" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Disponible" android:textSize="11sp"
+            android:textColor="@color/text_secondary" android:layout_marginStart="4dp"
+            android:layout_marginEnd="12dp"/>
+
+        <View android:layout_width="12dp" android:layout_height="12dp"
+            android:background="@color/state_red" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Con ganado" android:textSize="11sp"
+            android:textColor="@color/text_secondary" android:layout_marginStart="4dp"
+            android:layout_marginEnd="12dp"/>
+
+        <View android:layout_width="12dp" android:layout_height="12dp"
+            android:background="@color/state_orange" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Recuperándose" android:textSize="11sp"
+            android:textColor="@color/text_secondary" android:layout_marginStart="4dp"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="12dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="2dp"
+        app:cardBackgroundColor="@color/surface">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Consultando estado para:"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonDate"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                app:strokeColor="@color/primary"
+                app:icon="@android:drawable/ic_menu_my_calendar"
+                app:iconTint="@color/primary" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Manten presionado un potrero para ver sus fechas de rotación"
+        android:textColor="@color/text_secondary"
+        android:textSize="12sp"
+        android:paddingHorizontal="4dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerRotations"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp"
+        android:paddingBottom="80dp"
+        android:clipToPadding="false"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonLoadCattle"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_margin="16dp"
+        android:text="@string/load_cattle"
+        android:textSize="15sp"
+        app:backgroundTint="@color/primary"
+        app:cornerRadius="12dp" />
+
+</LinearLayout>

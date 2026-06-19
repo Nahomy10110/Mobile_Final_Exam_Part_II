@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Rotación de Potreros</string>
+    <string name="title_paddocks">Mis Potreros</string>
+    <string name="title_new_paddock">Nuevo potrero</string>
+    <string name="title_edit_paddock">Editar potrero</string>
+    <string name="title_rotation">Rotación de ganado</string>
+    <string name="add_paddock">Agregar potrero</string>
+    <string name="hint_name">Nombre del lote *</string>
+    <string name="hint_area">Área en m² *</string>
+    <string name="take_photo">Tomar foto</string>
+    <string name="record_video">Grabar video</string>
+    <string name="save">Guardar potrero</string>
+    <string name="delete">Borrar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="delete_confirm_title">¿Borrar potrero?</string>
+    <string name="delete_confirm_msg">Se borrarán también todos los históricos de rotación asociados. Esta acción no se puede deshacer.</string>
+    <string name="load_cattle">Cargar ganado en seleccionados</string>
+    <string name="empty_paddocks">Todavía no hay potreros.\nTocá el botón + para agregar el primero.</string>
+    <string name="menu_rotation">Rotación</string>
+    <string name="name_required">El nombre es obligatorio</string>
+    <string name="area_required">El área es obligatoria</string>
+    <string name="cattle_loaded">✓ Ganado cargado correctamente</string>
+    <string name="select_at_least_one">Seleccioná al menos un potrero verde</string>
+    <string name="no_active_rotation">Sin rotación activa en esta fecha</string>
+    <string name="state_green">Verde · Disponible</string>
+    <string name="state_red">Rojo · Con ganado</string>
+    <string name="state_orange">Naranja · Recuperándose</string>
+    <string name="cd_photo">Foto del potrero</string>
+    <string name="cd_video">Vista previa del video</string>
+    <string name="select_date_prefix">Consultando fecha:</string>
+    <string name="long_press_hint">Mantené presionado un potrero para ver sus fechas de rotación</string>
+    <string name="photo_preview">Vista previa de la foto</string>
+    <string name="no_photo">Sin foto todavía</string>
+    <string name="no_video">Sin video todavía</string>
+    <string name="paddock_count">%d potreros registrados</string>
+    <string name="creation_date_label">Fecha de creación:</string>
+    <string name="area_label">Área:</string>
+    <string name="rotation_dates_red">Rojo: %s → %s</string>
+    <string name="rotation_dates_orange">Naranja: %s → %s</string>
+    <string name="cd_open_detail">Ver detalle</string>
+    <plurals name="paddock_count">
+        <item quantity="one">1 potrero registrado</item>
+        <item quantity="other">%d potreros registrados</item>
+    </plurals>
+</resources>
